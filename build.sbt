@@ -1,4 +1,4 @@
-name := "message-regsitry"
+name := "message-registry"
 organization := "io.fitcentive"
 
 scalaVersion := "2.13.8"
