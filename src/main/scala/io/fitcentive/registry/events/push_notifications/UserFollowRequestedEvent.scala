@@ -5,8 +5,8 @@ import io.circe.generic.semiauto.deriveCodec
 
 import java.util.UUID
 
-case class UserFollowRequestedEvent(requestingUser: UUID, targetUser: UUID)
+case class UserFollowRequested(requestingUser: UUID, targetUser: UUID)
 
 object UserFollowRequestedEvent {
-  implicit val codec: Codec[UserFollowRequestedEvent] = deriveCodec[UserFollowRequestedEvent]
+  implicit val codec: Codec[UserFollowRequested] = deriveCodec[UserFollowRequested]
 }
