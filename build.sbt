@@ -21,4 +21,6 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-generic"        % "0.14.1",
   "io.circe" %% "circe-generic-extras" % "0.14.1",
   "io.circe" %% "circe-parser"         % "0.14.1",
+  // sdk
+  "io.fitcentive" %% "app-sdk" % "1.0.0",
 )
