@@ -1,4 +1,4 @@
-package io.fitcentive.registry.events.push_notifications
+package io.fitcentive.registry.events.push
 
 import com.google.pubsub.v1.PubsubMessage
 import io.circe.Codec
