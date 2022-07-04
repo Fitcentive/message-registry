@@ -10,7 +10,7 @@ import java.util.UUID
 
 case class UserFollowRequested(requestingUser: UUID, targetUser: UUID)
 
-object UserFollowRequestedEvent extends PubSubOps {
+object UserFollowRequested extends PubSubOps {
   implicit val codec: Codec[UserFollowRequested] = deriveCodec[UserFollowRequested]
 
   implicit val converter: PubSubMessageConverter[UserFollowRequested] =
