@@ -8,7 +8,7 @@ import io.fitcentive.sdk.utils.PubSubOps
 
 import java.util.UUID
 
-case class ChatRoomMessageSent(sendingUser: UUID, targetUser: UUID, roomId: UUID)
+case class ChatRoomMessageSent(sendingUser: UUID, targetUser: UUID, roomId: UUID, message: String)
 
 object ChatRoomMessageSent extends PubSubOps {
   implicit val codec: Codec[ChatRoomMessageSent] = deriveCodec[ChatRoomMessageSent]
