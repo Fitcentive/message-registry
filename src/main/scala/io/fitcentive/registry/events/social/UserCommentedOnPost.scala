@@ -8,7 +8,7 @@ import io.fitcentive.sdk.utils.PubSubOps
 
 import java.util.UUID
 
-case class UserCommentedOnPost(commentingUser: UUID, targetUser: UUID, postId: UUID)
+case class UserCommentedOnPost(commentingUser: UUID, targetUser: UUID, postId: UUID, postCreatorId: UUID)
 
 object UserCommentedOnPost extends PubSubOps {
   implicit val codec: Codec[UserCommentedOnPost] = deriveCodec[UserCommentedOnPost]
