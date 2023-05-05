@@ -8,7 +8,7 @@ import io.fitcentive.sdk.utils.PubSubOps
 
 import java.util.UUID
 
-case class ScheduleMeetupReminderForLater(meetupId: UUID)
+case class ScheduleMeetupReminderForLater(meetupId: UUID, scheduleReminderAtMillis: Long)
 
 object ScheduleMeetupReminderForLater extends PubSubOps {
   implicit val codec: Codec[ScheduleMeetupReminderForLater] = deriveCodec[ScheduleMeetupReminderForLater]
