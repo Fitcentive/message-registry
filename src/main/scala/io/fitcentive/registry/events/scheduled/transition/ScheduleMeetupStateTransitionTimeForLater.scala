@@ -1,4 +1,4 @@
-package io.fitcentive.registry.events.scheduled
+package io.fitcentive.registry.events.scheduled.transition
 
 import com.google.pubsub.v1.PubsubMessage
 import io.circe.Codec
