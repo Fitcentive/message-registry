@@ -9,6 +9,7 @@ import io.fitcentive.sdk.utils.PubSubOps
 import java.util.UUID
 
 case class ParticipantAddedAvailabilityToMeetup(
+  meetupName: String,
   meetupId: UUID,
   meetupOwnerId: UUID,
   participantId: UUID,

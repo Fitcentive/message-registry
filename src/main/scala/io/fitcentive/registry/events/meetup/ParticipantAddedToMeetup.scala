@@ -8,7 +8,7 @@ import io.fitcentive.sdk.utils.PubSubOps
 
 import java.util.UUID
 
-case class ParticipantAddedToMeetup(meetupId: UUID, ownerId: UUID, participantId: UUID)
+case class ParticipantAddedToMeetup(meetupName: String, meetupId: UUID, ownerId: UUID, participantId: UUID)
 
 object ParticipantAddedToMeetup extends PubSubOps {
   implicit val codec: Codec[ParticipantAddedToMeetup] = deriveCodec[ParticipantAddedToMeetup]
